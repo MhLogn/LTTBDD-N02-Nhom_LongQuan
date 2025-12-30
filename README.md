@@ -1,9 +1,7 @@
-#Music App
+# Music App
 
 ## Giới thiệu:
-### Music App là một ứng dụng nghe nhạc hiện đại được phát triển nhằm mang đến cho người dùng trải nghiệm giải trí tiện lợi và cá nhân hóa.
-### Ứng dụng cho phép người dùng tìm kiếm, phát nhạc, quản lý danh sách bài hát yêu thích và tạo playlist theo sở thích cá nhân. 
-### Với giao diện thân thiện, dễ sử dụng cùng hiệu suất ổn định, Music App hướng tới việc đáp ứng nhu cầu nghe nhạc mọi lúc, mọi nơi trên các thiết bị di động.
+### Music App là một ứng dụng nghe nhạc hiện đại được phát triển nhằm mang đến cho người dùng trải nghiệm giải trí tiện lợi và cá nhân hóa. Ứng dụng cho phép người dùng tìm kiếm, phát nhạc, quản lý danh sách bài hát yêu thích và tạo playlist theo sở thích cá nhân. Với giao diện thân thiện, dễ sử dụng cùng hiệu suất ổn định, Music App hướng tới việc đáp ứng nhu cầu nghe nhạc mọi lúc, mọi nơi trên các thiết bị di động.
 
 ## Thành viên:
 | STT | Họ và tên        | Mã sinh viên |
