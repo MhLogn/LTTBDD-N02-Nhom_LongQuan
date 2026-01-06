@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:music_app/assets/app_images.dart';
-import 'package:music_app/assets/app_vectors.dart';
 import 'package:music_app/common/widgets/button/basic_app_button.dart';
 import 'package:music_app/core/configs/theme/app_colors.dart';
 import 'package:music_app/presentation/intro/pages/get_started2.dart';
@@ -30,8 +28,7 @@ class GetStartedPage extends StatelessWidget {
             child: Column(
               children: [
                 Align(alignment: Alignment.topCenter),
-                SvgPicture.asset(AppVectors.logo, height: 250),
-                const SizedBox(height: 300),
+                Spacer(),
                 Text(
                   'Enjoy Listening To Music',
                   style: TextStyle(
@@ -42,7 +39,7 @@ class GetStartedPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 25),
                 Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed phasellus. Cursus ornare id scelerisque aliquam.',
+                  'Immerse yourself in a world of sound and rhythm. Discover your favorite songs, feel every beat, and enjoy music that matches your mood anytime, anywhere.',
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     color: AppColors.grey,
