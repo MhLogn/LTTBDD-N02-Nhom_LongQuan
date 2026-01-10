@@ -19,16 +19,19 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: SvgPicture.asset(AppVectors.logo)));
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(child: SvgPicture.asset(AppVectors.logo)),
+    );
   }
 
   Future<void> redirect() async {
     await Future.delayed(const Duration(seconds: 5));
     Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-            builder: (BuildContext context) => const GetStartedPage()
-        )
+      context,
+      MaterialPageRoute(
+        builder: (BuildContext context) => const GetStartedPage(),
+      ),
     );
   }
 }

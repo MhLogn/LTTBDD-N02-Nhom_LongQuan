@@ -8,4 +8,7 @@ class AppImages {
   // Image bg choose mode
   static const String choose_modeBG = '${basePath}bg_choose_mode.png';
 
+  // Image bg auth
+  static const String authBG = '${basePath}auth_bg.png';
+
 }

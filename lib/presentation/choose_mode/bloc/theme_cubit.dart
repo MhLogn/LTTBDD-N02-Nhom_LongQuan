@@ -1,21 +1,23 @@
-import 'package:flutter/material.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:flutter/material.dart';
 
 class ThemeCubit extends HydratedCubit<ThemeMode> {
+  ThemeCubit() : super(ThemeMode.light);
 
-  ThemeCubit() : super(ThemeMode.system);
-
-  void updateTheme(ThemeMode themeMode) => emit(themeMode);
+  void updateTheme(ThemeMode mode) {
+    emit(mode);
+  }
 
   @override
   ThemeMode? fromJson(Map<String, dynamic> json) {
-    throw UnimplementedError();
+    final index = json['theme'] as int;
+    return ThemeMode.values[index];
   }
 
   @override
   Map<String, dynamic>? toJson(ThemeMode state) {
-
-    throw UnimplementedError();
+    return {
+      'theme': state.index,
+    };
   }
-
 }
