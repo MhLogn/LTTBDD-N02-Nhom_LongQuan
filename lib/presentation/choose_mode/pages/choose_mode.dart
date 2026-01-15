@@ -58,8 +58,8 @@ class ChooseModePage extends StatelessWidget {
                             child: BackdropFilter(
                               filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                               child: Container(
-                                height: 80,
-                                width: 80,
+                                height: 60,
+                                width: 60,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: const Color(0xff30393C).withAlpha(128),
@@ -94,8 +94,8 @@ class ChooseModePage extends StatelessWidget {
                             child: BackdropFilter(
                               filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                               child: Container(
-                                height: 80,
-                                width: 80,
+                                height: 60,
+                                width: 60,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: const Color(0xff30393C).withAlpha(128),

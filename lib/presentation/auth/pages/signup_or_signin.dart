@@ -5,6 +5,8 @@ import 'package:music_app/common/helpers/is_dark.dart';
 import 'package:music_app/common/widgets/appbar/app_bar.dart';
 import 'package:music_app/common/widgets/button/basic_app_button.dart';
 import 'package:music_app/core/configs/theme/app_colors.dart';
+import 'package:music_app/presentation/auth/pages/signIn.dart';
+import 'package:music_app/presentation/auth/pages/signUp.dart';
 
 class SignupOrSigninPage extends StatelessWidget {
   const SignupOrSigninPage({super.key});
@@ -12,14 +14,10 @@ class SignupOrSigninPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: BasicAppBar(),
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(
-              top: 8,
-              left: 8,
-              child: const BasicAppBar(),
-            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: Column(
@@ -55,7 +53,18 @@ class SignupOrSigninPage extends StatelessWidget {
                     children: [
                       Expanded(
                         flex: 1,
-                        child: BasicAppButton(onPressed: () {}, title: 'Register'),
+                        child: BasicAppButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const SignupPage(),
+                              ),
+                            );
+                          },
+                          title: 'Register',
+                        ),
                       ),
 
                       SizedBox(width: 20),
@@ -63,7 +72,15 @@ class SignupOrSigninPage extends StatelessWidget {
                       Expanded(
                         flex: 1,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    const SigninPage(),
+                              ),
+                            );
+                          },
                           child: Text(
                             'Sign in',
                             style: TextStyle(
